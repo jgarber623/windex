@@ -77,11 +77,11 @@
             $readmeRaw = file_get_contents($currentDir.$readmeFile);
         
             if ($ext == 'textile') {
-                require_once( $_SERVER["DOCUMENT_ROOT"]. $windexPath . '/textile.php');
+                require_once( $_SERVER["DOCUMENT_ROOT"]. $windexPath . '/lib/textile.php');
                 $textile = new Textile();
                 $readmeContent = $textile->TextileThis($readmeRaw);
             } else if ($ext == 'markdown' || $ext == 'md' || $ext == 'mdown') {
-                require_once( $_SERVER["DOCUMENT_ROOT"]. $windexPath . '/markdown.php');
+                require_once( $_SERVER["DOCUMENT_ROOT"]. $windexPath . '/lib/markdown.php');
                 $readmeContent = Markdown($readmeRaw);
             } else if($ext == 'html' || $ext == 'htm') {
                 $readmeContent = $readmeRaw;
