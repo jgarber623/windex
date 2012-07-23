@@ -1,11 +1,6 @@
-<?php require_once('config.php'); ?>
+<?php require_once( 'config.php' ); ?>
 
-    </div> <!-- #dirlist -->
-
-    <?php echo $readmeMarkup; ?>
-
-</div> <!-- #wrap -->
-
+	<?php echo $readmeMarkup; ?>
 
 </body>
 </html>
