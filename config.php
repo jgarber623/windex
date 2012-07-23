@@ -93,7 +93,7 @@
 				$readmeContent = '<pre>' . "\n" . $readmeRaw . "\n" . '</pre>';
 			}
 			
-			$readmeMarkup = '<div id="readme">' . "\n" . '<h2 class="readme-title"><a href="' . $readmeFile . '">' . $readmeFile . '</a></h2>' . "\n" . $readmeContent . "\n" . '</div>';
+			$readmeMarkup = '<section id="readme">' . "\n" . '<header>' . "\n" . '<h1><a href="' . $readmeFile . '">' . $readmeFile . '</a></h1>' . "\n" . '</header>' . "\n" . $readmeContent . "\n" . '</section>';
 		}
 	}
 

@@ -8,10 +8,9 @@
 	
 	<title><?php echo $titletext; ?></title>
 	
-	<!-- <meta name="viewport" content="initial-scale=1.0, user-scalable=0"/>
+	<!-- <meta name="viewport" content="initial-scale=1.0, user-scalable=0"/> -->
 
-	<link rel="stylesheet" media="screen and (max-width: 480px)" href="<?php echo $windexPath; ?>/css/iphone.css" />
-	<link rel="stylesheet" media="screen and (min-width: 481px)" href="<?php echo $windexPath; ?>/css/screen-foxy.css" /> -->
+	<link rel="stylesheet" href="<?php echo $windexPath; ?>/stylesheets/foxy.css">
 </head>
 <body>
 
@@ -19,4 +18,5 @@
 		<h1><?php echo $h1text; ?></h1>
 	</header>
 	
-	
+	<section id="content">
+		
