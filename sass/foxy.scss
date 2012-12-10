@@ -1,0 +1,217 @@
+@import "compass/css3";
+
+
+// Compass configuration
+$default-border-radius: 10px;
+
+
+/* @group Elements */
+
+	body {
+		background: #f3f3f3;
+		color: #222;
+		font-family: "Lucida Grande", Verdana, "Helvetica Neue", Arial, sans-serif;
+		font-size: 13px;
+	}
+	
+	a {
+		color: #26d;
+		text-decoration: none;
+	}
+	
+	a:focus,
+	a:hover {
+		text-decoration: underline;
+	}
+	
+	img {
+		border: none;
+	}
+	
+	/* Hide Apache icons */
+	img[src^="/icons"] {
+		visibility: hidden;
+	}
+
+/* @end */
+
+
+/* @group Layout */
+
+	#wrapper {
+		margin: 40px auto 80px auto;
+		width: 740px;
+	}
+	
+	#directory-list {
+		background: #fff;
+		@include border-radius();
+		@include box-shadow( hsla( 0, 0, 0, 0.2 ) 0 5px 8px );
+		margin-bottom: 40px;
+		padding: 20px;
+	}
+
+/* @end */
+
+
+/* @group Header */
+
+	#page-header {
+		h1 {
+			font-family: "Helvetica Neue", Arial, sans-serif;
+			font-size: 22px;
+			font-weight: 100;
+			margin-top: 0;
+			
+			strong {
+				font-weight: 500;
+			}
+			
+			a {
+				border-bottom: 2px solid transparent;
+				color: #222;
+			}
+			
+			a:focus,
+			a:hover {
+				border-color: #16c;
+				color: #16c;
+				text-decoration: none;
+			}
+		}
+	}
+
+/* @end */
+
+
+/* @group Table */
+
+	table {
+		border-collapse: collapse;
+		padding: 0;
+	}
+	
+	tr,
+	th,
+	td {
+		border: none;
+	}
+	
+	th,
+	td {
+		padding: 3px 10px 3px 0;
+	}
+	
+	th {
+		border-bottom: 1px solid #e0e0e0;
+		text-align: right;
+		
+		a {
+			color: #333;
+		}
+	}
+	
+	td {
+		a:focus,
+		a:hover {
+			color: #222;
+		}
+		
+		a[href*="/"] {
+			color: #333;
+			font-weight: bold;
+			padding-right: 22px;
+		}
+		
+		a[href*="/"]:focus,
+		a[href*="/"]:hover {
+			background: image-url( "pointer-small.png" ) no-repeat 100% 50%;
+			color: #16c;
+		}
+		
+		a[href^="/"] {
+			color: #16c;
+			font-weight: normal;
+		}
+		
+		a[href^="/"],
+		a[href^="/"]:focus,
+		a[href^="/"]:hover {
+			background: image-url( "up-arrow.png" ) no-repeat 100% 50%;
+		}
+		
+		a[href^="/"]:focus,
+		a[href^="/"]:hover {
+			color: #222;
+		}
+		
+		img {
+			width: 24px;
+		}
+	}
+	
+	/* @group - Columns */
+
+		td:nth-child(1) {
+			padding: 1px 10px 1px 0;
+			text-align: center;
+			width: 24px;
+		}
+		
+		/* Name */
+		th:nth-child(2) {
+			text-align: left;
+		}
+		
+		/* Name */
+		td:nth-child(2) {
+			width: 460px;
+		}
+		
+		/* Last Modifed & Size */
+		td:nth-child(3),
+		td:nth-child(4) {
+			font-size: 11px;
+			padding-left: 10px;
+			text-align: right;
+		}
+		
+		/* Description */
+		td:nth-child(5) {
+			display: none;
+		}
+
+	/* @end */
+
+/* @end */
+
+
+/* @group Readme */
+
+	#readme {
+		line-height: 1.45em;
+		
+		header h1 {
+			border-bottom: 1px solid #ddd;
+			font-size: 0.95em;
+			padding-bottom: 0.4em;
+			
+			a {
+				color: #222;
+			}
+			
+			a:focus,
+			a:hover {
+				color: #26d;
+			}
+		}
+		
+		pre {
+			background: #fff;
+			border: 1px solid #ccc;
+			overflow-x: scroll;
+			padding: 10px;
+		}
+	}
+
+/* @end */

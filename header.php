@@ -1,4 +1,4 @@
-<?php require( 'config.php' ); ?>
+<?php require( 'config/windex.php' ); ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,9 +14,10 @@
 </head>
 <body>
 
-	<header>
-		<h1><?php echo $h1text; ?></h1>
-	</header>
-	
-	<section id="content">
+	<div id="wrapper">
+		<header id="page-header">
+			<h1><?php echo $h1text; ?></h1>
+		</header>
 		
+		<section id="directory-list">
+			

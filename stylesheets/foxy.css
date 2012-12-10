@@ -1,0 +1,216 @@
+/* @group Elements */
+/* line 10, ../sass/foxy.scss */
+body {
+  background: #f3f3f3;
+  color: #222;
+  font-family: "Lucida Grande", Verdana, "Helvetica Neue", Arial, sans-serif;
+  font-size: 13px;
+}
+
+/* line 17, ../sass/foxy.scss */
+a {
+  color: #26d;
+  text-decoration: none;
+}
+
+/* line 23, ../sass/foxy.scss */
+a:focus,
+a:hover {
+  text-decoration: underline;
+}
+
+/* line 27, ../sass/foxy.scss */
+img {
+  border: none;
+}
+
+/* Hide Apache icons */
+/* line 32, ../sass/foxy.scss */
+img[src^="/icons"] {
+  visibility: hidden;
+}
+
+/* @end */
+/* @group Layout */
+/* line 41, ../sass/foxy.scss */
+#wrapper {
+  margin: 40px auto 80px auto;
+  width: 740px;
+}
+
+/* line 46, ../sass/foxy.scss */
+#directory-list {
+  background: #fff;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 5px 8px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 5px 8px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 5px 8px;
+  margin-bottom: 40px;
+  padding: 20px;
+}
+
+/* @end */
+/* @group Header */
+/* line 60, ../sass/foxy.scss */
+#page-header h1 {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 22px;
+  font-weight: 100;
+  margin-top: 0;
+}
+/* line 66, ../sass/foxy.scss */
+#page-header h1 strong {
+  font-weight: 500;
+}
+/* line 70, ../sass/foxy.scss */
+#page-header h1 a {
+  border-bottom: 2px solid transparent;
+  color: #222;
+}
+/* line 76, ../sass/foxy.scss */
+#page-header h1 a:focus,
+#page-header h1 a:hover {
+  border-color: #16c;
+  color: #16c;
+  text-decoration: none;
+}
+
+/* @end */
+/* @group Table */
+/* line 89, ../sass/foxy.scss */
+table {
+  border-collapse: collapse;
+  padding: 0;
+}
+
+/* line 96, ../sass/foxy.scss */
+tr,
+th,
+td {
+  border: none;
+}
+
+/* line 101, ../sass/foxy.scss */
+th,
+td {
+  padding: 3px 10px 3px 0;
+}
+
+/* line 105, ../sass/foxy.scss */
+th {
+  border-bottom: 1px solid #e0e0e0;
+  text-align: right;
+}
+/* line 109, ../sass/foxy.scss */
+th a {
+  color: #333;
+}
+
+/* line 116, ../sass/foxy.scss */
+td a:focus,
+td a:hover {
+  color: #222;
+}
+/* line 120, ../sass/foxy.scss */
+td a[href*="/"] {
+  color: #333;
+  font-weight: bold;
+  padding-right: 22px;
+}
+/* line 127, ../sass/foxy.scss */
+td a[href*="/"]:focus,
+td a[href*="/"]:hover {
+  background: url('../images/pointer-small.png?1342102040') no-repeat 100% 50%;
+  color: #16c;
+}
+/* line 132, ../sass/foxy.scss */
+td a[href^="/"] {
+  color: #16c;
+  font-weight: normal;
+}
+/* line 139, ../sass/foxy.scss */
+td a[href^="/"],
+td a[href^="/"]:focus,
+td a[href^="/"]:hover {
+  background: url('../images/up-arrow.png?1342102036') no-repeat 100% 50%;
+}
+/* line 144, ../sass/foxy.scss */
+td a[href^="/"]:focus,
+td a[href^="/"]:hover {
+  color: #222;
+}
+/* line 148, ../sass/foxy.scss */
+td img {
+  width: 24px;
+}
+
+/* @group - Columns */
+/* line 155, ../sass/foxy.scss */
+td:nth-child(1) {
+  padding: 1px 10px 1px 0;
+  text-align: center;
+  width: 24px;
+}
+
+/* Name */
+/* line 162, ../sass/foxy.scss */
+th:nth-child(2) {
+  text-align: left;
+}
+
+/* Name */
+/* line 167, ../sass/foxy.scss */
+td:nth-child(2) {
+  width: 460px;
+}
+
+/* Last Modifed & Size */
+/* line 173, ../sass/foxy.scss */
+td:nth-child(3),
+td:nth-child(4) {
+  font-size: 11px;
+  padding-left: 10px;
+  text-align: right;
+}
+
+/* Description */
+/* line 180, ../sass/foxy.scss */
+td:nth-child(5) {
+  display: none;
+}
+
+/* @end */
+/* @end */
+/* @group Readme */
+/* line 191, ../sass/foxy.scss */
+#readme {
+  line-height: 1.45em;
+}
+/* line 194, ../sass/foxy.scss */
+#readme header h1 {
+  border-bottom: 1px solid #ddd;
+  font-size: 0.95em;
+  padding-bottom: 0.4em;
+}
+/* line 199, ../sass/foxy.scss */
+#readme header h1 a {
+  color: #222;
+}
+/* line 204, ../sass/foxy.scss */
+#readme header h1 a:focus,
+#readme header h1 a:hover {
+  color: #26d;
+}
+/* line 209, ../sass/foxy.scss */
+#readme pre {
+  background: #fff;
+  border: 1px solid #ccc;
+  overflow-x: scroll;
+  padding: 10px;
+}
+
+/* @end */
